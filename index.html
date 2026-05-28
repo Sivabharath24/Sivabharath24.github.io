@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="siva bharath — cse undergrad · freelance graphic designer · visual storyteller" />
+  <title>siva bharath</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Water Drop Cursor ── -->
+  <div class="cursor-drop" id="cursorDrop" aria-hidden="true">
+    <svg viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 1.5 C10 1.5, 1.5 12.5, 1.5 18 A8.5 8.5 0 0 0 18.5 18 C18.5 12.5, 10 1.5, 10 1.5Z" fill="#7A0D24"/>
+      <ellipse cx="7" cy="13.5" rx="1.8" ry="3" fill="rgba(255,255,255,0.22)" transform="rotate(-20,7,13.5)"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════ -->
+  <nav class="top-nav" id="topNav">
+    <a href="#home" class="nav-logo" aria-label="siva bharath — home">
+      <img src="images/christ.png" alt="christ logo" class="nav-christ-logo" />
+      <span>siva bharath</span>
+    </a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#About">about</a></li>
+      <li><a href="#Projects">projects</a></li>
+      <li><a href="#Journal">journal</a></li>
+      <li><a href="#Contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ══════════════════════════════
+       HERO
+  ═══════════════════════════════ -->
+  <header class="hero" id="home">
+    <div class="hero-left">
+      <p class="hero-eyebrow">
+        portfolio · 2026
+      </p>
+
+      <h1 class="hero-title">
+        siva<br><em>bharath</em>
+      </h1>
+
+      <p class="hero-tagline">
+        cse undergraduate · freelance graphic designer · movie maniac/critic
+      </p>
+
+      <p class="hero-manifesto">
+        some ideas make sense with data.<br>
+        others come alive through visuals.<br>
+        i'm curious about what happens when<br>
+        both meet and how people interact with them.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-maroon">get in touch</a>
+        <a href="#projects" class="btn btn-outline-navy">view work</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">tech projects</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">years design exp</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-deco-ring ring-1" aria-hidden="true"></div>
+      <div class="hero-deco-ring ring-2" aria-hidden="true"></div>
+      <div class="hero-deco-ring ring-3" aria-hidden="true"></div>
+
+      <!-- Price-tag Profile Card -->
+      <div class="profile-card" id="profileCard">
+        <!-- Price-tag punch hole — top-left corner only, no stray line -->
+        <div class="price-hole" aria-hidden="true"></div>
+
+        <div class="profile-avatar">
+          <img
+            src="images/profile.jpg"
+            alt="siva bharath profile photo"
+            id="profileImg"
+          />
+        </div>
+
+        <h2 class="profile-name">siva bharath</h2>
+        <div class="profile-divider" aria-hidden="true"></div>
+        <p class="profile-meta">
+          <strong>cse undergrad · graphic designer</strong>
+          tamil nadu, india
+        </p>
+
+        <a
+          href="https://www.linkedin.com/in/sivabharath24"
+          target="_blank"
+          rel="noopener"
+          class="profile-link"
+        >linkedin ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Wave Divider 1: hero → about ── -->
+  <div class="wave-wrap wave-cream-to-light" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,45 C120,75 240,15 360,45 C480,75 600,15 720,45 C840,75 960,15 1080,45 C1200,75 1320,15 1440,45 L1440,90 L0,90 Z" fill="var(--beige-light)"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════
+       ABOUT
+  ═══════════════════════════════ -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">about <em>me.</em></h2>
+
+    <div class="about-grid">
+
+      <!-- LEFT — intro text + education -->
+      <div class="about-col about-col-left reveal">
+        <p class="about-text">
+          hi, i'm siva! i'm a computer science student exploring the space between
+          technology, design, and user experience — where logic meets creativity,
+          and ideas turn into usable, meaningful products.
+        </p>
+        <p class="about-quote"><em>"where creativity meets code."</em></p>
+
+        <!-- Education Box -->
+        <div class="edu-box">
+          <div class="edu-header">
+            <span class="edu-pin" aria-hidden="true"></span>
+            <div>
+              <a href="https://jacsicoe.in/" target="_blank" rel="noopener" class="edu-college-link">
+                jayaraj annapackiam csi college of engineering
+              </a>
+              <a href="https://jacsicoe.in/" target="_blank" rel="noopener" class="edu-website-btn">
+                visit website ↗
+              </a>
+            </div>
+          </div>
+          <p class="edu-degree">b.e. computer science &amp; engineering</p>
+          <p class="edu-meta">sep 2024 – may 2028</p>
+          <p class="edu-grade">gpa: 8.0 &nbsp;|&nbsp; 10th: 86.8% &nbsp;|&nbsp; 12th: 76.16%</p>
+          <p class="edu-activities">● csi member &nbsp;● ndli member &nbsp;● design &amp; storytelling</p>
+        </div>
+      </div>
+
+      <!-- CENTRE — collage photo -->
+      <div class="about-col about-col-center reveal" style="--delay:0.15s">
+        <div class="collage-frame">
+          <img src="images/collage.jpg" alt="siva bharath — 500 connections on linkedin" />
+        </div>
+      </div>
+
+      <!-- RIGHT — right text + skills -->
+      <div class="about-col about-col-right reveal" style="--delay:0.3s">
+        <p class="about-text">
+          what drives me is turning complexity into clarity — whether through code,
+          design, or user experience. still exploring, still building, and always
+          open to opportunities &amp; internships where i can learn, collaborate,
+          and create at this intersection.
+        </p>
+
+        <!-- Skills Box -->
+        <div class="skills-box">
+          <div class="skills-group">
+            <h4 class="skills-group-label skills-tech-label">technical</h4>
+            <ul class="skills-list">
+              <li class="skill-chip skill-tech">ai / ml</li>
+              <li class="skill-chip skill-tech">python</li>
+              <li class="skill-chip skill-tech">data analysis</li>
+              <li class="skill-chip skill-tech">genai tools</li>
+            </ul>
+          </div>
+          <div class="skills-group" style="margin-top:1rem;">
+            <h4 class="skills-group-label skills-creative-label">creative</h4>
+            <ul class="skills-list">
+              <li class="skill-chip skill-creative">adobe photoshop</li>
+              <li class="skill-chip skill-creative">ui / ux</li>
+              <li class="skill-chip skill-creative">photography</li>
+              <li class="skill-chip skill-creative">presentation design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Wave Divider 2: about → projects ── -->
+  <div class="wave-wrap wave-light-to-dark" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C180,80 360,0 540,40 C720,80 900,0 1080,40 C1260,80 1380,20 1440,40 L1440,90 L0,90 Z" fill="var(--dark-card)"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════
+       PROJECTS
+  ═══════════════════════════════ -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title title-light">projects<em>.</em></h2>
+
+    <!-- TECH -->
+    <div class="subsection-label">tech</div>
+    <div class="polaroid-grid">
+
+      <a href="https://sivabharath24.github.io/sivafm/" target="_blank" rel="noopener" class="polaroid pol-tech reveal">
+        <div class="pol-img">
+          <img src="images/tech/sivafm.jpg" alt="sivafm project"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>sivafm</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">sivafm</p>
+          <p class="pol-desc">personal music streaming &amp; audio player.</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/Sivabharath24/canteen-ordering-system" target="_blank" rel="noopener" class="polaroid pol-tech reveal" style="--delay:0.1s">
+        <div class="pol-img">
+          <img src="images/tech/canteen.jpg" alt="canteen order system"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>canteen system</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">canteen order system</p>
+          <p class="pol-desc">full-stack web app for student menu &amp; order tracking.</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/Sivabharath24/heart-disease-prediction-system" target="_blank" rel="noopener" class="polaroid pol-tech reveal" style="--delay:0.2s">
+        <div class="pol-img">
+          <img src="images/tech/heart.jpg" alt="heart disease predictor"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>heart predictor</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">heart disease predictor</p>
+          <p class="pol-desc">ml model with python &amp; scikit-learn.</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/Sivabharath24/image-video-intelligence-system" target="_blank" rel="noopener" class="polaroid pol-tech reveal" style="--delay:0.3s">
+        <div class="pol-img">
+          <img src="images/tech/ai_video.jpg" alt="image & video intelligence"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>ai pipeline</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">image &amp; video intelligence</p>
+          <p class="pol-desc">multimodal ai pipeline with llm apis.</p>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="section-cta">
+      <a href="https://github.com/Sivabharath24" target="_blank" rel="noopener" class="platform-btn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        github profile
+      </a>
+    </div>
+
+    <!-- DESIGN -->
+    <div class="subsection-label" style="margin-top:4rem;">design</div>
+    <div class="polaroid-grid">
+
+      <a href="https://drive.google.com/file/d/1ZgrSmJ3sfcalIlPjfllvWH9PQ0egXTOb/view?usp=sharing" target="_blank" rel="noopener" class="polaroid pol-design reveal">
+        <div class="pol-img">
+          <img src="images/design/0.jpeg" alt="biggie design"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>biggie</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">biggie</p>
+          <p class="pol-desc">cinematic poster &amp; visual artwork.</p>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1yX2yYfdWG_ii2Jw3-00NIlwc9okw44uM/view?usp=sharing" target="_blank" rel="noopener" class="polaroid pol-design reveal" style="--delay:0.1s">
+        <div class="pol-img">
+          <img src="images/design/1.jpeg" alt="ground and sky"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>ground &amp; sky</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">ground and sky</p>
+          <p class="pol-desc">visual identity &amp; concept design.</p>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1qCgVFl8CllP5WLJzRVN57v7fHVxy2PhP/view?usp=sharing" target="_blank" rel="noopener" class="polaroid pol-design reveal" style="--delay:0.2s">
+        <div class="pol-img">
+          <img src="images/design/2.jpeg" alt="purple phantom"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>purple phantom</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">purple phantom</p>
+          <p class="pol-desc">creative concept &amp; digital design.</p>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1m1F5gBzRbqUHbYb7ZaRxSBHey1WrW32N/view?usp=sharing" target="_blank" rel="noopener" class="polaroid pol-design reveal" style="--delay:0.3s">
+        <div class="pol-img">
+          <img src="images/design/3.jpeg" alt="sigappu rojakkal"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>sigappu rojakkal</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">sigappu rojakkal</p>
+          <p class="pol-desc">cinematic film poster artwork.</p>
+        </div>
+      </a>
+
+      <a href="https://drive.google.com/file/d/1LEUO4DDHOeSgCyAZEEMM2UMNUqr7xLi1/view?usp=sharing" target="_blank" rel="noopener" class="polaroid pol-design reveal" style="--delay:0.4s">
+        <div class="pol-img">
+          <img src="images/design/4.jpeg" alt="yaar ra andha paiyan"
+            onerror="this.parentNode.innerHTML='<div class=pol-placeholder>yaar ra andha paiyan</div>'" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-title">yaar ra andha paiyan</p>
+          <p class="pol-desc">visual identity &amp; artwork design.</p>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="section-cta" style="margin-top:1.5rem;">
+      <a href="https://www.behance.net/sivabharath5" target="_blank" rel="noopener" class="platform-btn platform-behance">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M16.969 16.927a2.561 2.561 0 0 0 1.901.677 2.501 2.501 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.091 5.091 0 0 1-1.9 2.896 5.292 5.292 0 0 1-3.091.88 5.839 5.839 0 0 1-2.284-.433 4.871 4.871 0 0 1-1.723-1.211 5.657 5.657 0 0 1-1.08-1.874 7.057 7.057 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.313 5.313 0 0 1 5.088-3.604 4.87 4.87 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187ZM6.947 4.084a8.065 8.065 0 0 1 1.928.198 4.29 4.29 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.506 3.506 0 0 1-.506 1.961 3.726 3.726 0 0 1-1.503 1.287 3.588 3.588 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.593 4.593 0 0 1-.423 2.032 3.945 3.945 0 0 1-1.163 1.413 5.114 5.114 0 0 1-1.683.807 7.135 7.135 0 0 1-1.928.259H0V4.084h6.947Zm-.235 12.9c.308.004.616-.029.916-.099a2.18 2.18 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.618 2.618 0 0 0-1.696-.505h-3.54v4.279h3.471Zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.336 2.336 0 0 0-1.163.259 2.474 2.474 0 0 0-.738.62 2.359 2.359 0 0 0-.396.792c-.074.239-.12.485-.137.734h4.769a3.239 3.239 0 0 0-.679-1.785l-.002-.001Zm-13.813-.648a2.254 2.254 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.916 1.916 0 0 0-.178-.891 1.298 1.298 0 0 0-.495-.533 1.851 1.851 0 0 0-.711-.274 3.966 3.966 0 0 0-.835-.073H3.241v3.631h3.293v-.014ZM21.62 5.122h-5.976v1.527h5.976V5.122Z"/></svg>
+        behance
+      </a>
+      <a href="https://www.fiverr.com/sellers/sivabharath2024/" target="_blank" rel="noopener" class="platform-btn platform-fiverr">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z"/></svg>
+        fiverr
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Wave Divider 3: projects → journal (dark stays) ── -->
+  <div class="wave-wrap wave-dark-bump" aria-hidden="true">
+    <svg viewBox="0 0 1440 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,25 C360,50 720,0 1080,25 C1260,37 1380,12 1440,25 L1440,50 L0,50 Z" fill="var(--dark-card)" opacity="0.6"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════
+       JOURNAL
+  ═══════════════════════════════ -->
+  <section id="journal" class="journal-section">
+    <h2 class="section-title title-light">journal<em>.</em></h2>
+
+    <!-- BLOG -->
+    <div class="subsection-label">blog</div>
+    <div style="margin-bottom:2rem;">
+      <a href="https://www.linkedin.com/in/sivabharath24" target="_blank" rel="noopener" class="polaroid pol-design blog-polaroid reveal">
+        <div class="pol-img">
+          <img src="images/500_connections.png" alt="500 connections on linkedin" />
+        </div>
+        <div class="pol-caption">
+          <p class="pol-italic">"where creativity meets code."</p>
+          <p class="pol-title">500+ connections on linkedin</p>
+          <p class="pol-desc">feels different ✨ tysm everyone! 🤍</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="section-cta" style="margin-bottom:3.5rem;">
+      <a href="https://boxd.it/8UJmL" target="_blank" rel="noopener" class="platform-btn platform-letterboxd">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M8.224 14.352a4.447 4.447 0 0 1-3.775 2.092C1.992 16.444 0 14.454 0 12s1.992-4.444 4.45-4.444c1.592 0 2.988.836 3.774 2.092-.427.682-.673 1.488-.673 2.352s.246 1.67.673 2.352zM15.101 12c0-.864.247-1.67.674-2.352-.786-1.256-2.183-2.092-3.775-2.092s-2.989.836-3.775 2.092c.427.682.674 1.488.674 2.352s-.247 1.67-.674 2.352c.786 1.256 2.183 2.092 3.775 2.092s2.989-.836 3.775-2.092A4.42 4.42 0 0 1 15.1 12zm4.45-4.444a4.447 4.447 0 0 0-3.775 2.092c.427.682.673 1.488.673 2.352s-.246 1.67-.673 2.352a4.447 4.447 0 0 0 3.775 2.092C22.008 16.444 24 14.454 24 12s-1.992-4.444-4.45-4.444z"/></svg>
+        my letterboxd
+      </a>
+    </div>
+
+    <!-- CREATION -->
+    <div class="subsection-label">creation</div>
+    <div class="video-grid">
+
+      <div class="video-card reveal">
+        <div class="video-thumb" data-video-id="zrxvvDjC0KA">
+          <img src="https://img.youtube.com/vi/zrxvvDjC0KA/hqdefault.jpg" alt="Promo | Wallposters." loading="lazy" />
+          <button class="play-btn" aria-label="play video"></button>
+        </div>
+        <div class="video-info">
+          <h3>Promo | Wallposters.</h3>
+          <p>the research and plan for the characters and quotes are done - on the process of designing posters.</p>
+        </div>
+      </div>
+
+      <div class="video-card reveal" style="--delay:0.15s">
+        <div class="video-thumb" data-video-id="1-by9fxUQGY">
+          <img src="https://img.youtube.com/vi/1-by9fxUQGY/hqdefault.jpg" alt="First Semester." loading="lazy" />
+          <button class="play-btn" aria-label="play video"></button>
+        </div>
+        <div class="video-info">
+          <h3>First Semester.</h3>
+          <p>random clips shot on the first semester, after examination.</p>
+        </div>
+      </div>
+
+      <div class="video-card reveal" style="--delay:0.3s">
+        <div class="video-thumb" data-video-id="ulj4CmRCOsQ">
+          <img src="https://img.youtube.com/vi/ulj4CmRCOsQ/hqdefault.jpg" alt="a love letter to rukmini vasanth." loading="lazy" />
+          <button class="play-btn" aria-label="play video"></button>
+        </div>
+        <div class="video-info">
+          <h3>a love letter to rukmini vasanth.</h3>
+          <p>“ Hang on the beat &amp; follow her eyes. ” just a fan... With love, siva.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-cta" style="margin-top:2.5rem;">
+      <a href="https://www.youtube.com/@evilsiva13" target="_blank" rel="noopener" class="platform-btn platform-youtube">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        youtube channel
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Wave Divider 4: journal → contact ── -->
+  <div class="wave-wrap wave-dark-to-light" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,45 C120,15 240,75 360,45 C480,15 600,75 720,45 C840,15 960,75 1080,45 C1200,15 1320,75 1440,45 L1440,90 L0,90 Z" fill="var(--beige-light)"/>
+    </svg>
+  </div>
+
+  <!-- ══════════════════════════════
+       CONTACT
+  ═══════════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">let's <em>connect.</em></h2>
+    <p class="contact-desc">
+      open to internships, collaborations &amp; conversations.
+    </p>
+    <p class="contact-sub">
+      whether you have an opportunity in ai/ml, a design project, or just want to talk — i'd love to hear from you.
+    </p>
+
+    <div class="contact-layout">
+
+      <!-- Message Form -->
+      <div class="message-form reveal">
+        <h3 class="form-heading">send a message</h3>
+        <div class="form-group">
+          <label for="contactName">your name</label>
+          <input type="text" id="contactName" placeholder="name" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">email address</label>
+          <input type="email" id="contactEmail" placeholder="email@example.com" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">message</label>
+          <textarea id="contactMessage" placeholder="what's on your mind?"></textarea>
+        </div>
+        <button class="form-submit" id="formSubmit">send message →</button>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </div>
+
+      <!-- Social Links -->
+      <div class="social-links-col reveal" style="--delay:0.2s">
+        <h3 class="form-heading" style="color:var(--navy)">find me on</h3>
+        <div class="social-pills">
+
+          <a href="mailto:sivabharath2024@gmail.com" class="social-pill">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            <div class="social-pill-text">
+              <span class="pill-label">email</span>
+              <span class="pill-sub">sivabharath2024@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/sivabharath24" target="_blank" rel="noopener" class="social-pill">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <div class="social-pill-text">
+              <span class="pill-label">linkedin</span>
+              <span class="pill-sub">in/sivabharath24</span>
+            </div>
+          </a>
+
+          <a href="https://www.fiverr.com/sellers/sivabharath2024/" target="_blank" rel="noopener" class="social-pill">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.546.43.858 1.006.858.43 0 .732-.175.83-.487l1.425.4c-.351.848-1.22 1.364-2.255 1.364-1.748 0-2.549-1.355-2.549-2.515 0-1.14.703-2.505 2.45-2.505 1.856 0 2.471 1.384 2.471 2.408 0 .224-.01.37-.02.477zm-1.562-.945c-.04-.42-.342-.81-.889-.81-.508 0-.81.225-.908.81h1.797zM7.508 15.44h1.416l1.767-4.874h-1.62l-.86 2.837-.878-2.837H5.72l1.787 4.874zm-6.6 0H2.51v-3.558h1.524v3.558h1.591v-4.874H2.51v-.302c0-.332.235-.536.606-.536h.918V8.412H2.85c-1.162 0-1.943.712-1.943 1.755v.4H0v1.316h.908v3.558z"/></svg>
+            <div class="social-pill-text">
+              <span class="pill-label">fiverr</span>
+              <span class="pill-sub">hire me for design</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <img src="images/christ.png" alt="christ logo" class="footer-christ" />
+      <span>siva bharath</span>
+    </div>
+    <p class="footer-copy">© 2026 · cse undergrad · graphic designer · tamil nadu, india</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
