@@ -36,7 +36,6 @@ body {
   color: var(--navy);
   line-height: 1.65;
   overflow-x: hidden;
-  text-transform: lowercase;
   cursor: none;
 }
 
@@ -49,7 +48,6 @@ input, textarea {
 h1, h2, h3, h4 {
   font-family: var(--font-serif);
   font-weight: 500;
-  text-transform: lowercase;
 }
 a { text-decoration: none; color: inherit; cursor: none !important; }
 button { cursor: none !important; font-family: var(--font-sans); border: none; }
