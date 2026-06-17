@@ -45,8 +45,9 @@
   ═══════════════════════════════ -->
   <header class="hero" id="home">
     <div class="hero-left">
+      <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
       <p class="hero-eyebrow">
-        portfolio · 2026
+        <span id="timeGreeting">Hello</span> · portfolio 2026
       </p>
 
       <h1 class="hero-title">
@@ -57,7 +58,7 @@
         cse undergraduate · freelance graphic designer · movie maniac/critic
       </p>
 
-      <p class="hero-manifesto">
+      <p class="hero-manifesto" id="heroManifesto">
         some ideas make sense with data.<br>
         Others come alive through visuals.<br>
         I'm curious about what happens when<br>
@@ -113,6 +114,19 @@
           rel="noopener"
           class="profile-link"
         >LinkedIn ↗</a>
+      </div>
+
+      <!-- Currently Listening Widget -->
+      <div class="listening-widget" id="listeningWidget">
+        <div class="listening-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+          </svg>
+        </div>
+        <div class="listening-info">
+          <span class="listening-label">Currently Listening</span>
+          <span class="listening-song" id="listeningSong">Loading...</span>
+        </div>
       </div>
     </div>
   </header>
